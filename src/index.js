@@ -1,11 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createGlobalStyle } from 'styled-components';
 // import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { colors, fonts } from './components/settings/settings';
+
+const Basestyle = createGlobalStyle`
+  body {
+    max-width: 1200px;
+    // min-height: calc(100vh - 110px);
+    font-family: ${fonts.font_base};
+    color: ${colors.color_dark_gray};
+    margin: 0 auto;
+  }`
 
 ReactDOM.render(
   <React.StrictMode>
+    <Basestyle />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

@@ -14,10 +14,10 @@ const Styledmenu = styled.div`
 function Menu() {
     return (
         <Styledmenu>
-            <Button variant="outline-primary"><Link to="/">Start</Link></Button>
-            <Button variant="outline-primary"><Link to="/portfolio">Portfolio</Link></Button>
-            <Button variant="outline-primary">CV</Button>
-            <Button variant="outline-primary"><Link to="/contact">Kontakt</Link></Button>
+            <Button variant="outline-primary"><Link to="/" style={{ textDecoration: 'none' }}>Start</Link></Button>
+            <Button variant="outline-primary"><Link to="/portfolio" style={{ textDecoration: 'none' }}>Portfolio</Link></Button>
+            <Button href='https://www.daman.pl/cv.html' target='_blank' variant="outline-primary">CV</Button>
+            <Button variant="outline-primary"><Link to="/contact" style={{ textDecoration: 'none' }}>Kontakt</Link></Button>
         </Styledmenu>
     )
 }

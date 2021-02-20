@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-function CardIT({ title, description, link }) {
+function CardIT({ title, description, link, github }) {
     return (
         <Card border='primary' style={{ width: '18rem', background: 'none' }}>
             <Card.Body>
@@ -11,8 +11,8 @@ function CardIT({ title, description, link }) {
                 <Card.Text>
                     {description}
                 </Card.Text>
-                <Button className='m-1' href='#' variant="outline-primary">Strona</Button>
-                <Button className='m-1' target='_blank' href={link} variant="outline-primary">GitHub</Button>
+                <Button className='m-1' target='_blank' href={link} variant="outline-primary">Strona</Button>
+                <Button className='m-1' target='_blank' href={github} variant="outline-primary">GitHub</Button>
             </Card.Body>
         </Card>
     )

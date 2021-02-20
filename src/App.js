@@ -6,12 +6,12 @@ import Footer from './components/home/Footer/Footer';
 import PortfolioIT from './components/home/PortfolioIT/PortfolioIT';
 import Contact from './components/home/Contact/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <div>
           <Route exact path="/">
             <Header />
@@ -29,7 +29,7 @@ function App() {
             <Footer />
           </Route>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

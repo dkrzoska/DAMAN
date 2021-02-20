@@ -10,8 +10,7 @@ const Styleddiv = styled.div`
         align-items: center;
         column-gap: 10%;
         flex-wrap: wrap;
-        min-height: calc(100vh - 104px);
-        width: 100vw;
+        min-height: calc(100vh - 110px);
         // background: ${colors.color_white};
         background: #dddfd4 url(${img}) no-repeat center;
         margin: auto;
