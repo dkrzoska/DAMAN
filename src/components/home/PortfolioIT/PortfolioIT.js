@@ -9,11 +9,11 @@ const Styleddiv = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap: 10%;
         flex-wrap: wrap;
+        gap: 7%;
         min-height: calc(100vh - 110px);
         // background: ${colors.color_white};
-        background: #dddfd4 url(${img}) no-repeat center;
+        // background: url(${img}) no-repeat center;
         margin: auto;
         }
     }
@@ -60,6 +60,7 @@ function PortfolioIT() {
                 description='Strona na, której się znajdujesz'
                 link = 'https://www.daman.pl'
                 github='https://github.com/dkrzoska/DAMAN'
+                linktf = {false}
             />
         </Styleddiv>
     )

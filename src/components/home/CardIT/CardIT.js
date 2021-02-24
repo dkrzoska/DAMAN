@@ -2,17 +2,18 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-function CardIT({ title, description, link, github }) {
+function CardIT({ title, description, link, github, linktf=true }) {
     return (
-        <Card border='primary' style={{ width: '18rem', background: 'none' }}>
+        // <Card border='primary' style={{ width: '18rem', alignSelf: 'stretch', background: 'none' }}>
+        <Card border='primary' className='m-1' style={{ width: '18rem', background: 'none' }}>
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
                 <Card.Text>
                     {description}
                 </Card.Text>
-                <Button className='m-1' target='_blank' href={link} variant="outline-primary">Strona</Button>
-                <Button className='m-1' target='_blank' href={github} variant="outline-primary">GitHub</Button>
+                {linktf && <Button className='m-1' target='_blank' href={link} variant="primary">Strona</Button>}
+                <Button className='m-1' target='_blank' href={github} variant="primary">GitHub</Button>
             </Card.Body>
         </Card>
     )

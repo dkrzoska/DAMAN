@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Styleddiv = styled.div`
     {
+        border-top: solid 2px #007bff;
         .copyright {
             text-align:center;
             font-size: 18px;

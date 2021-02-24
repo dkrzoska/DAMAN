@@ -8,7 +8,7 @@ import { colors, fonts } from './components/settings/settings';
 
 const Basestyle = createGlobalStyle`
   body {
-    max-width: 1200px;
+    // max-width: 1200px;
     // min-height: calc(100vh - 110px);
     font-family: ${fonts.font_base};
     color: ${colors.color_dark_gray};

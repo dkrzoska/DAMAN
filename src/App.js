@@ -7,12 +7,22 @@ import PortfolioIT from './components/home/PortfolioIT/PortfolioIT';
 import Contact from './components/home/Contact/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter, Route } from 'react-router-dom';
+import styled from 'styled-components';
+import bkg from './assets/bkg.jpg';
+
+const Styleddiv = styled.div`{
+        background: #dddfd4 url(${bkg}) no-repeat center;
+        .container {
+          max-width: 1200px;
+          background: rgba(255,255,255,0.7);
+        }
+    }`
 
 function App() {
   return (
-    <div>
+    <Styleddiv>
       <HashRouter>
-        <div>
+        <div className='container'>
           <Route exact path="/">
             <Header />
             <Main />
@@ -30,7 +40,7 @@ function App() {
           </Route>
         </div>
       </HashRouter>
-    </div>
+    </Styleddiv>
   );
 }
 
