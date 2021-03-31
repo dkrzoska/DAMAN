@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 // import { colors, fonts } from '../../settings/settings';
 import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
 
 const Styledmenu = styled.div`
     display: flex;
