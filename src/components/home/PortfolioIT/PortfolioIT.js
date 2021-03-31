@@ -15,6 +15,7 @@ const Styleddiv = styled.div`
         // background: ${colors.color_white};
         // background: url(${img}) no-repeat center;
         margin: auto;
+        padding: 15px 0;
         }
     }
 `
