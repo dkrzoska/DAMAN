@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Language from '../Language/Language';
 import Menu from '../Menu/Menu';
 
 const Styleddiv = styled.div`
@@ -14,14 +15,26 @@ const Styleddiv = styled.div`
             margin: 0;
             margin-left: 10px;
         }
+        .menu-and-language{
+            display: flex;
+            gap: 20px;
+        }
     }
 `
 
-function Header() {
+function Header({ menu, changeLang }) {
     return (
         <Styleddiv>
             <h2 className='logo'>DAMAN</h2>
-            <Menu />
+            <div className='menu-and-language'>
+                <Menu
+                    menu={menu}
+
+                />
+                <Language
+                    changeLang={changeLang}
+                />
+            </div>
         </Styleddiv>
     )
 }

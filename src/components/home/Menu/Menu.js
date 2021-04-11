@@ -11,13 +11,13 @@ const Styledmenu = styled.div`
     padding: 10px;
 `;
 
-function Menu() {
+function Menu({menu}) {
     return (
         <Styledmenu>
-            <Button href='#/' variant="primary">Start</Button>
-            <Button href='#/portfolio' variant="primary">Portfolio</Button>
-            <Button href='https://www.daman.pl/cv.html' target='_blank' variant="primary">CV</Button>
-            <Button href='#/contact' variant="primary">Kontakt</Button>
+            <Button href='#/' variant="primary">{menu[0]}</Button>
+            <Button href='#/portfolio' variant="primary">{menu[1]}</Button>
+            <Button href='https://www.daman.pl/cv.html' target='_blank' variant="primary">{menu[2]}</Button>
+            <Button href='#/contact' variant="primary">{menu[3]}</Button>
         </Styledmenu>
     )
 }

@@ -19,12 +19,12 @@ const Styleddiv = styled.div`
     }
 `
 
-function Contact() {
+function Contact({contact}) {
     return (
         <Styleddiv>
             <Card border='primary' className='m-1' style={{ width: '18rem', background: 'none' }}>
                 <Card.Body>
-                    <Card.Title>Kontakt</Card.Title>
+                    <Card.Title>{contact}</Card.Title>
                     <Card.Text>Damian Krzoska</Card.Text>
                     <Card.Subtitle className="mb-2 text-muted">tel. 505-770-847</Card.Subtitle>
                     <Card.Subtitle className="mb-2 text-muted">e-mail: <Card.Link href='mailto:d.krzoska@gmail.com'>d.krzoska@gmail.com</Card.Link></Card.Subtitle>
